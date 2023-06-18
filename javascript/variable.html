@@ -1,0 +1,313 @@
+<html>
+
+    <head>
+        <title> A2Z practice    </title>
+        <style type="text/css">
+            .demo{
+                height: 500px;
+                width: 500px;
+                float: none;
+                background-color: silver;
+                
+            }
+        </style>
+    </head>
+
+    <body id="keyevent" onkeydown="onkeydown1()" onkeypress="onkeypress1()" onkeyup="onkeyup1()">
+        <h1>practice</h1>
+        <script>
+            function onkeypress1(){
+                document.getElementById('keyevent').style="background:purple";
+
+            }
+            function onkeyup1(){
+                document.getElementById('keyevent').style="background:grey";
+
+            }
+            function onkeydown1(){
+                document.getElementById('keyevent').style="background:red";
+
+            }
+        </script>
+        <!-- <h1>javascript practice        </h1> -->
+       <!-- <div id="data" class="demo" onclick="red()" ondblclick="green()" oncontextmenu="yellow()" onmouseenter="blue()" onmouseleave="orange()">
+            <p id="data1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Veniam cumque perspiciatis accusantium, dignissimos consectetur officiis?
+                 Nostrum sunt repellat praesentium vel cumque soluta nemo
+                 cum quasi quisquam rem expedita, laboriosam aspernatur!
+            </p>
+            <button onclick="hide1()">hide</button>
+            <button onclick="show1()">show</button>
+        </div> -->
+        
+         <!-- <script>
+            function hide1(){
+                document.getElementById('data1').style.visibility='hidden';
+                //document.getElementById('data1').style.display='none';
+
+            }
+            function show1(){
+                document.getElementById('data1').style.visibility='visible';
+                //document.getElementById('data1').style.display='inline-block';
+
+            }
+
+            function red(){
+                document.getElementById('data').style="background:red";
+            }
+
+            function green(){
+                document.getElementById('data').style="background:green";
+
+            }
+            function yellow(){
+                document.getElementById('data').style="background:yellow";
+
+            }
+            function blue(){
+                document.getElementById('data').style="background:blue";
+
+            }
+            function orange(){
+                document.getElementById('data').style="background:orange";
+
+            }
+        </script> -->
+        <div  class="demo" >
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque modi quaerat provident, alias ea, 
+                quisquam aspernatur fugit molestiae accusamus vitae sit natus odio amet placeat rerum distinctio,
+                facere autem repudiandae?</h3></div>
+     
+       
+  
+       
+
+        <!-- <script>
+        //ways
+
+        </script>
+    <script>
+        //output methods
+        //1
+        document.write("javascript");
+
+        //2
+        alert("is");
+
+        //3
+        console.log("scripting");
+
+        //4     'data' is is of content of HTML  
+        document.getElementById('data').innerHTML="language";
+    </script>
+    <script>
+        //variable types
+        //1   "var" is used for global access
+        var a=74;    //using "var" keyword
+        b=52;        //without using "var" keyword
+        document.write(a+b);
+
+        //2  "let" is used for local scope
+        if(true){
+            let ab=456;
+            document.write(ab);
+        }
+
+        //3   using "const" it uses for unique values
+        const c="superman";
+        document.write(c);
+
+     </script> -->
+     <!-- <script>
+        //datatypes 
+
+        //1    number 
+        var a=123;
+        b=12.15;
+        document.write(typeof b);
+        document.write("<br>");
+        
+        document.write(typeof a);
+        document.write("<br>");
+
+
+        //2   string 
+        var c="prashant";
+        var d='kharade';
+        document.write(c,d);
+
+        //3   Boolean
+        var e=true;
+        document.write(typeof e);
+
+        //4  null 
+        
+        //5 undefined
+        var a1;
+        document.write(typeof a1);
+
+        </script> -->
+
+        <script>
+            //operators
+
+        //1     Arithematic operators  [+,-,*,/,%]
+
+        //2     Assignment operator    [=,+=,-=,*=,/=,%=]
+        
+        //3     Increment decrement operator [++,--]
+
+        //4     comparison operator   [==,===,<=,>=,<,>,!=]
+        
+        //5      logical operator     [&&,||,!]
+
+        //6     concatination operator  [+]
+
+        //7     ternary operator    [?:] [condition?true:false]
+
+        </script>
+
+
+    <!-- <script>
+         
+        //1   if(condition){     statement;    }     
+        var i=1;
+        if(i<50){
+            document.write("<br>"+i);
+        }
+
+        //2   if else
+        var x=12;
+        var y=41;
+        if(x!=y){
+            document.write("<br>"+false);
+        }
+        else{
+            document.write("<br>"+true);
+        }
+
+        //3  switch
+        var a="*";
+        switch(a){
+            case "+" : 
+            var z=x+y;
+            document.write("<br> " +z);
+            break;
+
+            case "-": 
+            var z=x-y;
+            document.write("<br> " + z);
+            break;
+
+            case "*": 
+            var z=x*y;
+            document.write("<br> " +z);
+            break;
+
+            case "/": 
+            var z=x/y;
+            document.write("<br> " +x / y);
+            break;
+
+            case "%": 
+            var z=x%y;
+            document.write("<br> " +x % y);
+            break;
+
+            default : 
+            document.write("<br> " +"INVALID CHOICE");
+            break;
+        }
+    </script> -->
+
+    <!-- <script>
+         //loop control statements
+         
+         //1  for ( initilization ; condition ; increment/decrement ){ statement }
+        for(i=1;i<50;i++){
+            if(i%2==0){
+            document.write("<br>"+i);
+            }
+        }
+
+        //2   while    initilization  while( condition ){ statement;  increment/decrement;} 
+        var x=3;
+        while(x<=30){
+            document.write("<br> "+x);
+            x+=3;
+        }
+
+        //3   initilizatin  do{ statement; increment/decrement } while(condition)
+        var a=2;
+        var j=1;
+        do{
+           var b=a*j;
+           document.write("<br>"+b);
+           j++;
+        }while(j<=10);
+
+    </script> -->
+    <!-- <script>
+        //functions
+
+        //1   Normal functions
+        function demo(){
+            alert("Hello");
+            document.getElementById('data').innerHTML="JAVASCRIPT";
+        }
+        demo();
+
+        //2  parametrize function
+        function demo1(a,b){
+            var c=a+b;
+            document.write(c);
+        }
+        demo1(12,34);   
+    </script> -->
+
+
+
+    <!-- <script>
+        //Array
+
+        var a=[10,20,30,40,50,60,70,80,90,100];
+        document.write(a);
+        for(var i=a.length-1;i>=0;i--){
+            document.write("<br>"+a[i]);
+        }
+        
+        a.reverse();                   //reverse the array
+        document.write("<br>"+a);
+
+        a.shift();                    //remove the first element  
+        document.write("<br>"+a);
+
+        a.unshift(110,120,130);      //add elemrnts to initial
+        document.write("<br>"+a);
+
+
+        a.pop();                      //remove the last element
+        document.write("<br>"+a);
+
+        a.push(140,150,160);          //add elements to add at last
+        document.write("<br>"+a);
+
+        a.splice(2,10);               //remove the 10 elements from 2 index no
+        document.write("<br>"+a);
+
+        var b=a.findIndex(80);
+        document.write(b);
+
+
+        a.sort();
+        document.write(a);
+
+
+    </script> -->
+
+    </body>
+
+ 
+
+</html>

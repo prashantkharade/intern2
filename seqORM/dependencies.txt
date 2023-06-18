@@ -1,0 +1,16 @@
+npm install sequelize reflect-metadata sequelize-typescript
+install --save-dev @types/node @types/validator
+npm install cors
+npm i express-fileupload
+npm install --save tsyringe
+npm install jsonwebtoken 
+npm install express-validator
+npm install bcryptjs
+
+
+npx nodemon index.js
+
+
+mkdir demo
+cd demo
+code .          
